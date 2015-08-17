@@ -10,7 +10,7 @@ docker_package_info:
   pre_pkgs: 
     - apt-transport-https
     - curl
-    - linux-image-extra-{{ ansible_kernel }}
+#    - linux-image-extra-{{ ansible_kernel }}
     - software-properties-common
   pkgs:
     - lxc-docker
@@ -31,6 +31,6 @@ docker_repo_info:
     update_cache: yes
     state: present
   repos:
-    - deb https://get.docker.io/ubuntu docker main
+    - deb http://get.docker.io/ubuntu docker main
 
 docker_pip_path: /usr/local/bin/pip

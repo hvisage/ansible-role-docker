@@ -11,6 +11,8 @@ galaxy_info:
     - precise
   - name: Debian
     versions:
+    - strech/sid
+    - strech
     - jessie
     - wheezie
   - name: Fedora
